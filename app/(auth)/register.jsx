@@ -1,6 +1,6 @@
 import { Link, Redirect } from "expo-router";
 import { useState } from "react";
-import { View, Text, TextInput, Button } from "react-native";
+import { Button, Text, TextInput, View } from "react-native";
 import { useAuth } from "../../lib/auth";
 
 export default function Register() {

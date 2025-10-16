@@ -1,9 +1,9 @@
-import { Link, Redirect } from "expo-router";
-import { useAuth } from "../../lib/auth";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { api } from "../../lib/api";
-import { View, Text, Button, TextInput, FlatList } from "react-native";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { Link } from "expo-router";
 import { useState } from "react";
+import { Button, FlatList, Text, TextInput, View } from "react-native";
+import { api } from "../../lib/api";
+import { useAuth } from "../../lib/auth";
 
 export default function TasksScreen() {
   const { user, logout } = useAuth();
